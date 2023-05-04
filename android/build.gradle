@@ -1,0 +1,54 @@
+group 'com.example.hello2'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+    }
+    defaultConfig {
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libRSSupport.so'
+    }
+}
+
+dependencies {
+    implementation 'de.idnow.android.sdk:idnow-platform:5.2.0' // replace "5.2.0" with the version you want to include
+}
