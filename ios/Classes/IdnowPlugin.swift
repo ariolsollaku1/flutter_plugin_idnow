@@ -16,25 +16,21 @@ public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
           if let args = call.arguments as? Dictionary<String, Any>,
               let code = args["code"] as? String {
               let controller = (UIApplication.shared.delegate?.window??.rootViewController)!;
-              IDNowSDK.shared.start(token: code, preferredLanguage:"en", fromViewController: controller, listener:{(result: IDNowSDK.IdentResult.type, statusCode: IDNowSDK.IdentResult.statusCode, message: String) in
-                      if result == .ERROR {
-        //                  print(statusCode.description)
-                          self.showAlert(text: statusCode.description)
-                      } else if result == .FINISHED {
-
+              IDNowSDK.shared.start(token: code, preferredLanguage:"en", fromViewController: controller, listener:{(res: IDNowSDK.IdentResult.type, statusCode: IDNowSDK.IdentResult.statusCode, message: String) in
+                      if res == .ERROR {
+                          print("Error", statusCode.description);
+                          result(statusCode.description);
+                      } else if res == .CANCELLED {
+                          print("CANCELLED");
+                          result("CANCELLED");
+                      } else if res == .FINISHED {
+                          print("FINISHED");
+                          result("CANCELLED");
                       }
                   })
-              result("iOS " + UIDevice.current.systemVersion)
             } else {
               result(FlutterError.init(code: "bad args", message: nil, details: nil))
             }
       }
   }
-
-    func showAlert(text: String){
-        let controller = (UIApplication.shared.delegate?.window??.rootViewController)!;
-        let alert = UIAlertController(title: nil, message: text, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-        controller.present(alert, animated: true, completion: nil)
-    }
 }

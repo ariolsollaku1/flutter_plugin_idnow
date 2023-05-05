@@ -52,14 +52,16 @@ public class IdnowPlugin implements FlutterPlugin, MethodCallHandler, ActivityAw
         public void onIdentResult(IDnowResult iDnowResult) {
           if (iDnowResult.getResultType() == IDnowResult.ResultType.FINISHED) {
             Log.d(TAG, "Finished");
+            result.success(iDnowResult.getResultType().toString());
           } else if (iDnowResult.getResultType() == IDnowResult.ResultType.CANCELLED) {
             Log.d(TAG, "Cancelled: " + iDnowResult.getStatusCode());
+            result.success(iDnowResult.getResultType().toString());
           } else if (iDnowResult.getResultType() == IDnowResult.ResultType.ERROR) {
-            Log.d(TAG, "Error: " + iDnowResult.getStatusCode());
+            Log.d(TAG, "Error: " + iDnowResult.getMessage());
+            result.success(iDnowResult.getMessage());
           }
         }
       });
-      result.success("Android " + android.os.Build.VERSION.RELEASE);
     } else {
       result.notImplemented();
     }
