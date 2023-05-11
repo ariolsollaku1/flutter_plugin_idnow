@@ -57,8 +57,8 @@ public class IdnowPlugin implements FlutterPlugin, MethodCallHandler, ActivityAw
             Log.d(TAG, "Cancelled: " + iDnowResult.getStatusCode());
             result.success(iDnowResult.getResultType().toString());
           } else if (iDnowResult.getResultType() == IDnowResult.ResultType.ERROR) {
-            Log.d(TAG, "Error: " + iDnowResult.getMessage());
-            result.success(iDnowResult.getMessage());
+            Log.d(TAG, "Error: " + iDnowResult.getStatusCode());
+            result.success(iDnowResult.getStatusCode());
           }
         }
       });
