@@ -1,13 +1,14 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDNowSDKCore
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDNowSDKCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Accelerate
+import Combine
 import CommonCrypto
+import Compression
 import CoreFoundation
 import CoreGraphics
-import CoreMotion
 import CoreText
 import FaceTecSDK
 import Foundation
@@ -15,10 +16,12 @@ import Foundation
 import ImageIO
 import PDFKit
 import QuartzCore
+import QuickLook
 import ReplayKit
 import Security
 import StoreKit
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
@@ -70,11 +73,11 @@ extension Swift.Int {
   public func packed() -> Foundation.Data
   @objc deinit
 }
-infix operator +| : DefaultPrecedence
-infix operator +- : DefaultPrecedence
 extension UIKit.UIFont {
   public static func register(from url: Foundation.URL) throws -> Swift.String?
 }
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
 @_hasMissingDesignatedInitializers public class AbortRequestPayload {
   public func packed() -> Foundation.Data
   @objc deinit
@@ -331,6 +334,8 @@ public enum IDNowSDKFeature {
   public var chooseAbortReasonIsMandatory: Swift.Bool
   public var shouldDisableFlashlightDuringSecurityFeature: Swift.Bool
   public var showNameConfirmationScreen: Swift.Bool
+  public var shouldUseTensorFlow: Swift.Bool
+  public var tensorFlowDetectionTimeOut: Swift.Int
   public func setIntroData(_ data: [IDNowSDKCore.IntroItem])
   public func getIntroData() -> [IDNowSDKCore.IntroItem]
   public func isEnableIntro() -> Swift.Bool
@@ -406,6 +411,8 @@ public typealias IDNowSDKResultListener = (IDNowSDKCore.IDNowSDK.IdentResult.typ
 }
 extension IDNowSDKCore.IDNowSDK {
   public func autoformatIdentEntry(newContent: Swift.String, performedReplacement: Swift.String) -> Swift.String
+}
+extension Foundation.Bundle : @unchecked Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers public class TrackingConfirmationRequestPayload {
   public func packed() -> Foundation.Data
