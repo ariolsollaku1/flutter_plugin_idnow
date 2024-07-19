@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _idnowPlugin.startIdentification("TST-VLCMM") ?? 'Unknown platform version';
+          await _idnowPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -47,6 +47,17 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  final _ctrl = TextEditingController(text: 'TS2-GTWCB');
+  var _result = '';
+
+  void _onTap() async {
+    final text = _ctrl.text.trim();
+    if (text.isEmpty) return;
+
+    final res = await Idnow().startIdentification(text);
+    setState(() => _result = '$res');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -54,8 +65,21 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: Column(
+          children: [
+            const Spacer(),
+            TextField(
+              controller: _ctrl,
+            ),
+            const Spacer(),
+            TextButton(
+              onPressed: _onTap,
+              child: const Text('Start Indentification'),
+            ),
+            const Spacer(),
+            Text('Result: $_result'),
+            const Spacer(),
+          ],
         ),
       ),
     );
