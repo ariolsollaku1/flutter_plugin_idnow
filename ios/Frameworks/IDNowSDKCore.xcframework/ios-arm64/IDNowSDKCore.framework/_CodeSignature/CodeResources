@@ -490,11 +490,11 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KpnDlJoG/5uxXoif9nQkShnoj40=
+		24/Tv1wG7PV+llayj41JLP72hcs=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Uk1sEsgZlksW7RbF+OBV+/OgWNI=
+		ajvgGSAVSYXoYRLfcZ8yu/KHNCI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -502,11 +502,11 @@
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Uk1sEsgZlksW7RbF+OBV+/OgWNI=
+		ajvgGSAVSYXoYRLfcZ8yu/KHNCI=
 		</data>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+7FsmPgogeR50XpKyP8nZL1JDgY=
+		9jYlH0w1GOwtkAKIqAJL3ImEZTs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3345,14 +3345,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ngRfS7PoNOWFDMv+2Dd+vTo5rgeHbfBkcJljSLMy8BM=
+			sJz24uNLXt4KwVJCUu/Kd6wrB8k6sIp0v0/hT815Sp4=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i4XAOtbu1ymgRq5P8sNpTxGLlhGiiAMZhB+EeNkn+Xw=
+			pYpfvlK6iyY2vLmIdULYd58NQk1mhX/dxPOXydPilZw=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -3366,14 +3366,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i4XAOtbu1ymgRq5P8sNpTxGLlhGiiAMZhB+EeNkn+Xw=
+			pYpfvlK6iyY2vLmIdULYd58NQk1mhX/dxPOXydPilZw=
 			</data>
 		</dict>
 		<key>Modules/IDNowSDKCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QoHl2Xfuy6dJ1aLPTPyqopGtag5ITrUigz7VgYECCuE=
+			eVdZBw3Kf7SJxbySIllsEBvjJZQiMKYK5xEI0LJxhaE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

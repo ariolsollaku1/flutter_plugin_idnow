@@ -889,13 +889,6 @@
       },
       {
         "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1288,20 +1281,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
       },
       {
         "kind": "Import",
@@ -4842,27 +4821,6 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
         "moduleName": "IDNowSDKCore",
         "declAttributes": [
           "RawDocComment"
@@ -6223,20 +6181,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
       },
       {
         "kind": "Import",
@@ -7682,27 +7626,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
       },
       {
         "kind": "Import",
@@ -13136,13 +13059,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "IDNowSDK",
         "printedName": "IDNowSDK",
@@ -15178,20 +15094,6 @@
       },
       {
         "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16382,27 +16284,6 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID",
-        "printedName": "ReadID",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
-      },
-      {
-        "kind": "Import",
-        "name": "ReadID_UI",
-        "printedName": "ReadID_UI",
-        "declKind": "Import",
-        "moduleName": "IDNowSDKCore"
       },
       {
         "kind": "Import",
@@ -18928,72 +18809,6 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByStringLiteral",
-            "printedName": "ExpressibleByStringLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "StringLiteralType",
-                "printedName": "StringLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s26ExpressibleByStringLiteralP",
-            "mangledName": "$ss26ExpressibleByStringLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ExtendedGraphemeClusterLiteralType",
-                "printedName": "ExtendedGraphemeClusterLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
-            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByUnicodeScalarLiteral",
-            "printedName": "ExpressibleByUnicodeScalarLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UnicodeScalarLiteralType",
-                "printedName": "UnicodeScalarLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
-            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
           }
         ]
       },
@@ -20068,13 +19883,6 @@
             "printedName": "vDSP_FloatingPointGeneratable",
             "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
             "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MLShapedArrayScalar",
-            "printedName": "MLShapedArrayScalar",
-            "usr": "s:6CoreML19MLShapedArrayScalarP",
-            "mangledName": "$s6CoreML19MLShapedArrayScalarP"
           }
         ]
       },
@@ -20685,13 +20493,6 @@
             "printedName": "vDSP_FloatingPointGeneratable",
             "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
             "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MLShapedArrayScalar",
-            "printedName": "MLShapedArrayScalar",
-            "usr": "s:6CoreML19MLShapedArrayScalarP",
-            "mangledName": "$s6CoreML19MLShapedArrayScalarP"
           }
         ]
       },
@@ -22338,13 +22139,6 @@
             ],
             "usr": "s:7SwiftUI10AnimatableP",
             "mangledName": "$s7SwiftUI10AnimatableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           }
         ]
       },
@@ -30224,55 +30018,6 @@
       "value": "\"IDNowSDKCore.IDNowOCRInstructionCardOverlay\""
     },
     {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 296,
-      "length": 12,
-      "value": "\"OAuthToken\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 591,
-      "length": 26,
-      "value": "\"_nfc_instruction_message\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 840,
-      "length": 10,
-      "value": "\"NFC Scan\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "FloatLiteral",
-      "offset": 937,
-      "length": 3,
-      "value": "0.7"
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1000,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 1110,
-      "length": 30,
-      "value": "\"_nfc_instruction_startButton\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/IDNowNFCInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 1374,
-      "length": 7,
-      "value": "\"Start\""
-    },
-    {
       "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Networking\/WebSockets\/AddDocumentImageCaptureResponse.swift",
       "kind": "StringLiteral",
       "offset": 266,
@@ -36874,27 +36619,6 @@
       "value": "\"list\""
     },
     {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/ReadID\/ReadIDHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 468,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/ReadID\/ReadIDHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 485,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/NFC\/ReadID\/ReadIDHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 503,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/IdentView\/BaseView\/IDNowMessageButtonBottomView.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
@@ -40561,55 +40285,6 @@
       "offset": 846,
       "length": 17,
       "value": "\"IDNowSDKCore.CombinedShapeItem\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 532,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 652,
-      "length": 26,
-      "value": "\"_nfc_instruction_message\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 10,
-      "value": "\"NFC Scan\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "FloatLiteral",
-      "offset": 998,
-      "length": 3,
-      "value": "0.7"
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1061,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 1171,
-      "length": 30,
-      "value": "\"_nfc_instruction_startButton\""
-    },
-    {
-      "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/MRZ\/IDNowMRZInstructionsOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 1435,
-      "length": 7,
-      "value": "\"Start\""
     },
     {
       "filePath": "\/Users\/alexm\/Documents\/work-latest\/autoident\/native\/ios\/sdk\/de.idnow.ios.sdk\/IDNowSDKCore\/Presentation\/IdentView\/OCR\/IDNowOCRCompositeOverlay.swift",

@@ -17,8 +17,6 @@ import ImageIO
 import PDFKit
 import QuartzCore
 import QuickLook
-import ReadID
-import ReadID_UI
 import ReplayKit
 import Security
 import StoreKit
