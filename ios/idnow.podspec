@@ -15,12 +15,16 @@ A new Flutter plugin project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-	s.vendored_frameworks = 'Frameworks/XS2AiOSNetService.xcframework', 'Frameworks/FaceTecSDK.xcframework', 'Frameworks/IDNowSDKCore.xcframework'
+	s.vendored_frameworks = 'Frameworks/FaceTecSDK.xcframework', 'Frameworks/IDNowSDKCore.xcframework'
 	s.preserve_paths = 'Frameworks/**/**/*'
-	s.xcconfig = { 'OTHER_LDFLAGS' => ' -framework FaceTecSDK -framework XS2AiOSNetService -framework IDNowSDKCore' }
+	s.xcconfig = { 'OTHER_LDFLAGS' => ' -framework FaceTecSDK -framework IDNowSDKCore' }
 	s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  s.pod_target_xcconfig = {
+	  'DEFINES_MODULE' => 'YES',
+	  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+	  'ENABLE_BITCODE' => 'NO' # Disable bitcode
+  }
   s.swift_version = '5.0'
 end
