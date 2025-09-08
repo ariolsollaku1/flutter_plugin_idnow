@@ -28,6 +28,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace "com.digitsapiens.flutter.plugin.idnow"
     compileSdkVersion 31
 
     compileOptions {
